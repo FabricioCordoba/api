@@ -1,0 +1,62 @@
+<DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuarios</title>
+    <link rel="stylesheet" href="style.css"> 
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <div class="conteinerGeneral"> 
+    <div class="conteiner1">
+        <h1>API REST</h1>
+        <p>Práctica de consumo de recursos a través de endpoints. Métodos GET, POST, PUT y DELETE.</p>
+        <p>Utilizamos el backend de prueba de <a href="https://mockapi.io" target="_blank">MockAPI</a></p>
+    </div>
+    <div class="containerModal">
+        <dialog id="modal">
+            <form action="" method="dialog" id="form">
+                <label for="fullName">Nombre completo
+                    <input type="text" id="nombre" name="nombreCompleto" required>
+                </label>
+                <label for="email">Correo Electrónico
+                    <input type="email" id="email" name="email" required>
+                </label>
+                <label for="phone">Teléfono
+                    <input type="tel" id="telefono" name="telefono" required
+                pattern="^(?:(?:00)?549?)?0?(?:11|[2368]\d)(?:(?=\d{0,2}15)\d{2})??\d{8}$">
+                </label>
+                    <input type="submit" value="aceptar">
+                    <input type="reset" value="limpiar">
+                    <input type="button" value="cancelar" id="closeModal">
+            </form>
+        </dialog>
+    </div>
+    
+  <div class="containerInput">
+    <label for="name">Nombre:</label>
+    <input type="text" id="name" />
+    <label for="email">Email:</label>
+    <input type="email" id="mail" />
+    <label for="phone">Teléfono:</label>
+    <input type="tel" id="phone" />
+    <button onclick="createUser()">Agregar Usuario</button>
+  </div>
+<div>
+    <table id="usersTable">
+        <thead>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Email</th>
+            <th>Teléfono</th>
+        </thead>
+          
+          
+          </table>
+</div>
+  
+    </div>
+      </body>
+      </html>
